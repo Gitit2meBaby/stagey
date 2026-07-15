@@ -1,0 +1,282 @@
+:root {
+  --bg: #faf9f5;
+  --panel: #ffffff;
+  --ink: #161616;
+  --ink-dim: #6b695f;
+  --line: #ddd9cd;
+  --chord: #a15c0f;
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  --sans:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  --tab-size: 13px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100vw;
+}
+
+/* =========================================
+   HOME
+========================================= */
+
+.song-list-page {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px 16px 40px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.song-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.song-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 70px;
+
+  padding: 18px 20px;
+
+  background: #222;
+  color: #fff;
+
+  border: 2px solid #444;
+  border-radius: 12px;
+
+  font-size: 1.35rem;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: background 0.15s ease;
+}
+
+.song-button:active {
+  background: #444;
+}
+
+.song-button:hover {
+  background: #333;
+}
+
+.chart {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 10px 14px 20px;
+}
+
+/* Header: song title + font size control only */
+.song-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 6px;
+  margin-bottom: 8px;
+}
+.song-title {
+  font-size: 19px;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 0.2px;
+}
+.song-sub {
+  font-size: 11.5px;
+  color: var(--ink-dim);
+}
+.size-ctl {
+  display: flex;
+  gap: 4px;
+}
+.size-ctl button {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  font-size: 12px;
+  padding: 2px 7px;
+  border-radius: 4px;
+  color: var(--ink);
+  line-height: 1.4;
+}
+.size-ctl button:active {
+  background: var(--line);
+}
+
+/* Section blocks */
+.part {
+  margin-top: 10px;
+  padding-top: 7px;
+  border-top: 1px solid var(--line);
+}
+.part:first-of-type {
+  border-top: none;
+  margin-top: 6px;
+}
+
+.part-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.part-title {
+  font-weight: 800;
+  font-size: 13.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+.part-reps {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ink-dim);
+}
+
+/* Lyric cue: first + last line of the section only, one row */
+.pre-cue {
+  font-size: 10.5px;
+  margin-bottom: 1px;
+  color: var(--ink-dim);
+  line-height: 1.3;
+  font-style: italic;
+}
+.cue {
+  font-size: 12.5px;
+  margin-top: 1px;
+  color: var(--ink);
+  line-height: 1.3;
+  font-weight: 600;
+}
+.cue .arrow {
+  color: var(--ink-dim);
+  margin: 0 5px 0 40px;
+}
+.cue.instrumental {
+  font-style: italic;
+  color: var(--ink-dim);
+  font-size: 10.5px;
+}
+
+/* =========================================================
+   TabBlock system (CSS Grid) — the standard way to render a
+   tab + chord-row from here on. See TabBlock.js.
+   Structure:
+     .tabx                the whole 2-or-4-bar block, position:relative
+       .tabx-chordrow      grid, one column per slot, chords placed by
+                           grid-column = exact slot index
+       .tabx-row (x4)      one per string (G/D/A/E), label + grid
+         .tabx-label       fixed-width string letter, outside the grid
+         .tabx-grid        grid, one column per slot, notes placed by
+                           grid-column = exact slot index
+       .tabx-barlines      absolute-positioned vertical lines marking
+                           bar boundaries, drawn once across the whole
+                           block instead of "|" characters typed by hand
+   Because .tabx-chordrow and every .tabx-grid share the same column
+   count and the same left offset (the label width), a chord and a note
+   given the same slot index will always land in the same visual column
+   — no manual space-counting involved.
+   ========================================================= */
+.tabx {
+  position: relative;
+  margin: 6px 0 10px;
+  font-family: var(--mono);
+  font-size: var(--tab-size);
+}
+
+.tabx-chordrow {
+  display: grid;
+  align-items: start;
+  height: 1.35em;
+  margin-left: 16px;
+  margin-bottom: 2px;
+}
+.tabx-chord {
+  color: var(--chord);
+  font-weight: 700;
+  white-space: nowrap;
+  line-height: 1.35em;
+}
+
+.tabx-row {
+  display: flex;
+  align-items: center;
+  height: 1em;
+}
+.tabx-label {
+  flex: 0 0 16px;
+  width: 16px;
+  font-weight: 700;
+  color: var(--ink-dim);
+  font-size: 11px;
+}
+.tabx-grid {
+  position: relative;
+  flex: 1 1 auto;
+  display: grid;
+  align-items: center;
+  height: 100%;
+}
+.tabx-grid::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  border-top: 1px dashed var(--line);
+}
+.tabx-note {
+  position: relative;
+  z-index: 1;
+  background: var(--bg);
+  font-weight: 700;
+  padding-right: 2px;
+  line-height: 1;
+}
+
+.tabx-barlines {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 16px;
+  right: 0;
+  pointer-events: none;
+}
+.tabx-barlines span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--line);
+}
+
+.chart-foot {
+  margin-top: 14px;
+  padding-top: 7px;
+  border-top: 1px solid var(--line);
+  font-size: 10.5px;
+  color: var(--ink-dim);
+  text-align: center;
+}
