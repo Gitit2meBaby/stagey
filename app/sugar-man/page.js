@@ -9,16 +9,6 @@ import TabBlock from "../components/TabBlock";
    labels so they render exactly as written in the source tab.
    =================================================================== */
 
-/* ===================== INTRO ===================== */
-const introBlock = {
-  bars: 1,
-  slotsPerBar: 16,
-  chords: [{ bar: 0, slot: 0, name: "Am" }],
-  notes: {
-    D: [{ bar: 0, slot: 0, fret: 7 }],
-  },
-};
-
 /* ===================== VERSE — shared rows ===================== */
 /* Row 1: D7 | D6 D6 | A8 A8 | A7 A7 */
 const verseRow1 = {
@@ -289,16 +279,6 @@ const page = () => {
           </div>
         </div>
 
-        {/* <!-- INTRO --> */}
-        <section className="part">
-          <div className="part-head">
-            <span className="part-title">Intro</span>
-            <span className="part-reps">×4</span>
-          </div>
-          <TabBlock {...introBlock} />
-          <div className="cue instrumental">(instrumental)</div>
-        </section>
-
         {/* <!-- VERSE 1 --> */}
         <section className="part">
           <div className="part-head">
@@ -324,13 +304,7 @@ const page = () => {
             <span className="part-title">Chorus</span>
             <span className="part-reps">×1</span>
           </div>
-          <div className="pre-cue">Silver magic ships you carry...</div>
-          <TabBlock {...chorus2Row1} />
-          <TabBlock {...chorus2Row2} />
-          <TabBlock {...chorus2Row3} />
-          <div className="cue">
-            <span className="arrow">→</span>Jumpers, coke, sweet 'Mary Jane'
-          </div>
+          <h2>C - Am - D - F</h2>
         </section>
 
         {/* <!-- VERSE 2 --> */}
@@ -358,13 +332,7 @@ const page = () => {
           <div className="part-head">
             <span className="part-title">Chorus</span>
             <span className="part-reps">×1</span>
-          </div>
-          <div className="pre-cue">Silver magick ships you carry...</div>
-          <TabBlock {...chorus2Row1} />
-          <TabBlock {...chorus2Row2} />
-          <TabBlock {...chorus2Row3} />
-          <div className="cue">
-            <span className="arrow">→</span>Jumpers, coke, sweet 'Mary Jane'
+            <h2>C - Am - D - F</h2>
           </div>
         </section>
 
@@ -436,13 +404,7 @@ const page = () => {
           <div className="part-head">
             <span className="part-title">Chorus</span>
             <span className="part-reps">×1</span>
-          </div>
-          <div className="pre-cue">Silver magic ships you carry...</div>
-          <TabBlock {...chorus2Row1} />
-          <TabBlock {...chorus2Row2} />
-          <TabBlock {...chorus2Row3} />
-          <div className="cue">
-            <span className="arrow">→</span>Jumpers, coke, sweet 'Mary Jane'
+            <h2>C - Am - D - F</h2>
           </div>
         </section>
 
@@ -471,13 +433,7 @@ const page = () => {
           <div className="part-head">
             <span className="part-title">Chorus</span>
             <span className="part-reps">×1</span>
-          </div>
-          <div className="pre-cue">Silver magick ships you carry...</div>
-          <TabBlock {...chorus2Row1} />
-          <TabBlock {...chorus2Row2} />
-          <TabBlock {...chorus2Row3} />
-          <div className="cue">
-            <span className="arrow">→</span>Jumpers, coke, sweet 'Mary Jane'
+            <h2>C - Am - D - F</h2>
           </div>
         </section>
 

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function true_to_myself() {
   return (
     <main className="song-page">

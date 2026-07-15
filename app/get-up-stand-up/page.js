@@ -103,7 +103,19 @@ const page = () => {
           <div className="pre-cue">
             Get up, stand up: stand up for your rights!
           </div>
-          <TabBlock {...introChorusBlock} />
+          <pre className="tab">
+            G|--------------------------------------------|<br></br>
+            D|--------5--------------5--------------------|<br></br>
+            A|----------6-5653-----3----------------------|<br></br>
+            E|--68-----------------------3--6-8-----------|<br></br>
+          </pre>
+
+          <pre className="tab">
+            G|---------------------------------------|<br></br>
+            D|--------5--------------------5-3h5p3---|<br></br>
+            A|-------------6-5653-----3333-----------|<br></br>
+            E|------------------------------------6-8|<br></br>
+          </pre>
           <div className="cue">
             <span className="arrow">→</span>Get up, stand up: don't give up the
             fight!

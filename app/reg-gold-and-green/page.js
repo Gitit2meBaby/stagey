@@ -5,6 +5,9 @@ export default function reg_gold_and_green() {
       <h2>Gm</h2>
       <h3>1 - 4</h3>
       <p>Random 5 (D) for a few bars</p>
+      <h2>Chorus</h2>
+      <h3>Cm - Gm X3</h3>
+      <h3>Fm - Gm </h3>
     </main>
   );
 }
