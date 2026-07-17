@@ -5,7 +5,7 @@ export default function crazy_baldhead() {
   return (
     <main className="song-page">
       <h2>One drop</h2>
-      <h2>|* - F# - F# - F# -| * - B - AB - A - |</h2>
+      <h2>|* - G - G - G -| * - C - Bb C - Bb - |</h2>
       <Image src={baldhead}></Image>
     </main>
   );

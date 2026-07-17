@@ -8,7 +8,7 @@ export default function prithivi() {
       <h3>1 - 1 - 4 - 5</h3>
       <p>Middle hold long notes</p>
       <p>B - A - G - F# - C# </p>
-      <p>Ending - Walk up EE-F#F#-G-A-B</p>
+      <p>Ending - B blues descending riff</p>
     </main>
   );
 }
