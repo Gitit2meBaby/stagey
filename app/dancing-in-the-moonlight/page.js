@@ -14,7 +14,7 @@ const page = () => {
       <Image src={dancing2}></Image>
       <Image src={dancing3}></Image>
       <Image src={dancing4}></Image>
-      <h2>E - D - C - B</h2>
+      <h2>E - D - C - G</h2>
       <em>open notes as last note</em>
       <Image src={dancing5}></Image>
       <Image src={dancing6}></Image>
