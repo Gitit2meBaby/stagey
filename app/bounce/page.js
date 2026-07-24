@@ -15,7 +15,7 @@ export default function bounce() {
       <h2>A - B - A-B-A</h2>
       <h2>E</h2>
 
-      <h2>Repeat Final stops 2x for end</h2>
+      <h2>Repeat Final stops 3x for end</h2>
     </main>
   );
 }

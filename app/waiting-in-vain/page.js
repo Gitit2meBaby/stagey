@@ -166,6 +166,8 @@ const page = () => {
 
         <Image src={wv1}></Image>
         <Image src={wv2}></Image>
+        <h2>Middle</h2>
+        <h2>C# - D# - C - A#</h2>
 
         {/* <!-- INTRO --> */}
         <section className="part">

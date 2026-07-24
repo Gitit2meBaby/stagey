@@ -19,7 +19,7 @@ const songs = [
   { title: "Prithivi", href: "/prithivi" },
   { title: "Red Eyes", href: "/red-eyes" },
   { title: "Reggae Rockers", href: "/reggae-rockers" },
-  { title: "Reg Gold and Green", href: "/reg-gold-and-green" },
+  { title: "Red Gold and Green", href: "/red-gold-and-green" },
   { title: "Roots Rock Reggae", href: "/roots-rock-reggae" },
   { title: "Running Away", href: "/running-away" },
   { title: "Sugar Man", href: "/sugar-man" },
@@ -28,6 +28,13 @@ const songs = [
   { title: "True to Myself", href: "/true-to-myself" },
   { title: "Waiting in Vain", href: "/waiting-in-vain" },
   { title: "World A Reggae Music", href: "/world-a-reggae-music" },
+  { title: "Dancing in the Moonlight", href: "/dancing-in-the-moonlight" },
+  { title: "King Bee", href: "/king-bee" },
+  { title: "Calling Card", href: "/calling-card" },
+  { title: "Shes Crazy", href: "/shes-crazy" },
+  { title: "Long Train Runnin", href: "/long-train-runnin" },
+  { title: "Have a Good Time", href: "/have-a-good-time" },
+  { title: "People Say", href: "/people-say" },
 ];
 
 songs.sort((a, b) => a.title.localeCompare(b.title));

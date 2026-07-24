@@ -4,7 +4,8 @@ export default function true_to_myself() {
   return (
     <main className="song-page">
       <h1>True to Myself</h1>
-      Db - Gb - Ab - Ab
+      <p>boppy upbeat</p>
+      <h2>Db - Gb - Ab - Ab</h2>
     </main>
   );
 }

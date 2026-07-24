@@ -64,6 +64,8 @@ const page = () => {
         <div className="song-head">
           <h1 className="song-title">Get Up Stand Up - Bob Marley</h1>
           <h2>Funk version in B</h2>
+          <h2>dont forget it in B!!!</h2>
+          <h2> Chromatic walk every 2 towrards end!</h2>
           <div className="size-ctl">
             <button onclick="resize(-1)">A-</button>
             <button onclick="resize(1)">A+</button>
