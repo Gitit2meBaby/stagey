@@ -9,9 +9,11 @@ const page = () => {
     <section className="imageContainer">
       <h3>Intro</h3>
       <Image src={tb1}></Image>
-      <h3>Verse</h3>
+      <h3>Chorus</h3>
       <Image src={tb2}></Image>
+      <h3>Verse</h3>
       <Image src={tb3}></Image>
+      <a href="https://www.youtube.com/watch?v=RtN9MlCp1p8">YoutTube</a>
     </section>
   );
 };

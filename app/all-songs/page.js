@@ -58,6 +58,7 @@ const songs = [
   { title: "Buffalo Soldier", href: "/buffalo-soldier" },
   { title: "Positive Vibration", href: "/positive-vibration" },
   { title: "Natty Dread", href: "/natty-dread" },
+  { title: "Rebel Music", href: "/rebel-music" },
   { title: "Ambush in the Night", href: "/ambush-in-the-night" },
 ];
 
