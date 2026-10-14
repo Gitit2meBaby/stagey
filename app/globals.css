@@ -545,3 +545,10 @@ a {
   color: var(--ink-dim);
   text-align: center;
 }
+
+.imageContainer {
+  image {
+    width: 100vw;
+    height: auto;
+  }
+}
