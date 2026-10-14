@@ -35,6 +35,30 @@ const songs = [
   { title: "Long Train Runnin", href: "/long-train-runnin" },
   { title: "Have a Good Time", href: "/have-a-good-time" },
   { title: "People Say", href: "/people-say" },
+
+  // Additional songs
+  { title: "Them Belly Full", href: "/them-belly-full" },
+  { title: "Burnin' and Lootin'", href: "/burnin-and-lootin" },
+  { title: "Ganja Gun", href: "/ganja-gun" },
+  { title: "Exodus", href: "/exodus" },
+  { title: "No More Trouble", href: "/no-more-trouble" },
+  { title: "War", href: "/war" },
+  { title: "Kinky Reggae", href: "/kinky-reggae" },
+  { title: "Midnight Ravers", href: "/midnight-ravers" },
+  { title: "All Day All Night", href: "/all-day-all-night" },
+  { title: "Fussing and Fighting", href: "/fussing-and-fighting" },
+  { title: "Natural Mystic", href: "/natural-mystic" },
+  { title: "Soul Rebel", href: "/soul-rebel" },
+  { title: "No Woman, No Cry", href: "/no-woman-no-cry" },
+  { title: "Redemption Song", href: "/redemption-song" },
+  { title: "Coming in from the Cold", href: "/coming-in-from-the-cold" },
+  { title: "Rock It Baby", href: "/rock-it-baby" },
+  { title: "Stir It Up", href: "/stir-it-up" },
+  { title: "One Love", href: "/one-love" },
+  { title: "Buffalo Soldier", href: "/buffalo-soldier" },
+  { title: "Positive Vibration", href: "/positive-vibration" },
+  { title: "Natty Dread", href: "/natty-dread" },
+  { title: "Ambush in the Night", href: "/ambush-in-the-night" },
 ];
 
 songs.sort((a, b) => a.title.localeCompare(b.title));

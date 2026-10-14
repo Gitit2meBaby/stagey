@@ -61,8 +61,8 @@ const page = () => {
         <div className="song-head">
           <h1 className="song-title">Running Away - Bob Marley</h1>
           <div className="size-ctl">
-            <button onclick="resize(-1)">A-</button>
-            <button onclick="resize(1)">A+</button>
+            <button onClick="resize(-1)">A-</button>
+            <button onClick="resize(1)">A+</button>
           </div>
         </div>
 
@@ -144,6 +144,8 @@ const page = () => {
           </div>
         </section>
       </div>
+      <br></br>
+      <a href="https://www.youtube.com/watch?v=k6QFsMYFeeo">youtube</a>
     </section>
   );
 };
